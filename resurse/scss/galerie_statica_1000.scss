@@ -1,0 +1,15 @@
+#grid-galerie {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:    repeat(5, 1fr);
+}
+
+$i: 0;
+
+@for $lin from 1 through 5 {
+    @for $col from 1 through 2 {
+        $i: $i + 1;
+        figure:nth-child(#{$i}) {
+            grid-area: #{$lin} / #{$col} / #{$lin + 1} / #{$col + 1};
+        }
+    }
+}

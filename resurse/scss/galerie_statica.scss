@@ -1,0 +1,33 @@
+#grid-galerie {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:    repeat(4, 1fr);
+
+    figure {
+        width: 100%;
+        height: 100%;
+        margin: 0 0 15px;
+        transition:
+        transform 1.2s ease-in-out,
+        border    1.2s ease-in-out;
+
+        &:hover {
+        transform: scale(1.25) rotate(-10deg);
+        border: 4px solid var(--border-color);
+        }
+    }
+}
+
+    $i: 0;
+    @for $row from 1 through 4 {
+        @for $col from 1 through 3 {
+            @if not (($row == 2 and $col == 2) or ($row == 3 and $col == 2)) {
+                $i: $i + 1;
+                figure:nth-child(#{$i}) {
+                    grid-area: #{$row} / #{$col} / #{$row + 1} / #{$col + 1};
+                }
+            }
+        }
+    }

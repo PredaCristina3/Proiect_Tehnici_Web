@@ -1,0 +1,115 @@
+@keyframes resizeAnimation {
+    0% {
+        width: 80%;
+        height: 3px;
+        background-color: var(--highlight-color-a);
+        opacity: 0.5;
+    }
+
+    50% {
+        width: 100%;
+        height: 5px;
+        background-color: var(--highlight-color-b);
+        transform: rotate(180deg);
+        opacity: 0.75;
+    }
+
+    100% {
+        width: 80%;
+        height: 3px;
+        background-color: var(--text-color-a);
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+nav {
+    height: calc(var(--inaltime-meniu)/2);
+}
+
+#hamburger {
+    display: block;
+    position: relative;
+    height: calc(var(--inaltime-meniu)/2);
+    width: 35px;
+
+    .hamburger-icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dreptunghi {
+        display: block;
+        width: 80%;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        opacity: 1;
+    }
+}
+
+ul.meniu {
+    background-color: var(--nav-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    clip-path: circle(0% at 0 0);
+    transition: clip-path 1s ease-in-out;
+
+    li {
+        position: static;
+        margin: 0;
+        width: 100%;
+        height: calc(var(--inaltime-meniu)/2);
+        line-height: calc(var(--inaltime-meniu)/2);
+
+        &:not(:has(ul)):hover::before {
+        opacity: 0;
+        }
+
+        div:hover {
+        background: var(--hover-color);
+        color: var(--text-color-b);
+        transition: all 0.5s linear;
+        }
+
+        .img-icon a:hover {
+        color: var(--text-color-b);
+        transition: all 0.5s linear;
+        }
+    }
+
+    ul {
+        transform: none;
+        transition: none;
+        width: 100%;
+    }
+}
+
+#ch-menu:checked + ul.meniu {
+    clip-path: circle(155% at 0 0);
+}
+
+#ch-menu:not(:checked) + ul.meniu {
+    clip-path: circle(0% at 0 0);
+    transition: clip-path 0s ease-in-out;
+}
+
+
+@media screen and (max-width: 700px) {
+    @for $i from 1 through 3 {
+        .dreptunghi {
+            &:nth-child(#{$i}) {
+                animation: resizeAnimation 2s ease-in-out;
+                animation-fill-mode: forwards;
+                animation-delay: #{$i * .3}s; 
+            }
+        }
+    }
+}

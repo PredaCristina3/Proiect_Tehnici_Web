@@ -1,0 +1,12 @@
+nav {
+  font-size: 14px;
+}
+
+ul.meniu li div.img-icon {
+  display: block;
+}
+ul.meniu li div.text-icon {
+  display: none;
+}
+
+/*# sourceMappingURL=nav1000.css.map */

@@ -1,0 +1,16 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with
+(
+    $body-bg: #343A40,
+    $body-secondary-bg: #343343,
+    $link-color: #fff,
+    $link-decoration: none,
+    $grid-breakpoints: ( md:700px, lg:1000px ),
+    $border-radius: 0.4rem,
+    $h1-font-size: 3rem,
+    $h2-font-size: 1.9rem,
+    $h3-font-size: 1.7rem,
+    $h4-font-size: 1.55rem,
+    $h5-font-size: 1.3rem,
+    $h6-font-size: 1.1rem, 
+    $font-family-sans-serif: "Tagesschrift"
+)

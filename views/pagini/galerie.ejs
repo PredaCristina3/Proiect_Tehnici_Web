@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta name="description" content="Galerie media pentru circuitul de Formula 1 de la Monaco">
+    <meta name="keywords" content="F1, Formula 1, Monaco GP, Grand Prix, circuit">
+    <link rel="stylesheet" href="/resurse/scss/galerie_statica.css">
+    <link rel="stylesheet" href="/resurse/scss/galerie_dinamica.css">
+    <link rel="stylesheet" href="/resurse/scss/galerie_statica_1000.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="/resurse/scss/galerie_statica_700.css" media="screen and (max-width:700px)">
+    <title>Galerie Media - Monaco GP</title>
+    <%- include("../fragmente/head.ejs") %>
+
+</head>
+<body>
+    <header>
+        <%- include("../fragmente/header.ejs") %>
+        <h1>Galerie Media</h1>
+    </header>
+
+    <section id="galerie-statica">
+        <% d = new Date(); 
+        // d = new Date("2025-04-26T12:50:00"); // pt testare
+        sfert_curent = Math.floor(d.getMinutes()/15) + 1;
+        let sfert_curent_str = sfert_curent.toString();
+        let contor = 0; %>
+        <div id="grid-galerie">
+        <%  for (let imag of locals.imagini) { 
+                if (imag.sfert_ora && imag.sfert_ora.includes(sfert_curent_str)) {
+                    if (contor >= 10) break;
+                    contor++; %>
+            <figure>
+                <picture>
+                    <source srcset="<%- imag.fisier_mediu %>" media="screen and (max-width:1000px)"/>
+                    <source srcset="<%- imag.fisier_mic %>" media="screen and (max-width:700px)"/>
+                    <img src="<%- imag.fisier %>" title="<%- imag.descriere %>" alt="<%- imag.titlu %>">
+                </picture>
+                <figcaption><%- imag.descriere %></figcaption>
+            </figure>
+                <% }
+            } %>
+        </div>
+    </section><br>
+
+    <section id="galerie-dinamica">
+        <% // Alegem o putere a lui 2: 2, 4, 8, 16
+        const puteri = [2, 4, 8, 16];
+        const randomCount = puteri[Math.floor(Math.random() * puteri.length)];
+
+        // Filtrăm imaginile cu indici pari
+        const imagPare = locals.imagini.filter(function(img, index) {
+            return index % 2 === 0;
+        });
+
+        // Selectăm primele 'randomCount' imagini
+        const imagSelect = imagPare.slice(0, randomCount); %>
+
+        <div id="galerie-frame">
+            <% imagSelect.forEach(function(imag, index) { %>
+                <figure class="slide">
+                    <picture>
+                        <source srcset="<%- imag.fisier_mediu %>" media="screen and (max-width:1000px)">
+                        <source srcset="<%- imag.fisier_mic %>" media="screen and (max-width:700px)">
+                        <img src="<%- imag.fisier %>" title="<%- imag.descriere %>" alt="<%- imag.titlu %>">
+                    </picture>
+                    <figcaption><%- imag.descriere %></figcaption>
+                </figure>
+            <% }); %>
+        </div>
+    </section><br>
+
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

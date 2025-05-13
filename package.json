@@ -1,0 +1,30 @@
+{
+  "name": "preda-cristina-paula_grupa-212_tehnici-web_proiect_f1-monaco",
+  "version": "1.0.0",
+  "description": "Circuitul de Formula 1 de la Monaco - istoric, statistici și informații despre curse",
+  "keywords": [
+    "F1",
+    "Formula",
+    "1",
+    "Monaco",
+    "Grand",
+    "Prix",
+    "circuit",
+    "pilot",
+    "record"
+  ],
+  "license": "ISC",
+  "author": "Preda Cristina-Paula",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "sass": "^1.87.0",
+    "sharp": "^0.34.1"
+  }
+}

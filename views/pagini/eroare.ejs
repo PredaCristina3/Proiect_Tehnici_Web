@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>F1 Monaco Grand Prix</title>
+        <meta name="description" content="Circuitul de Formula 1 de la Monaco - istoric, statistici și informații despre curse">
+        <meta name="keywords" content="F1, Formula 1, Monaco GP, Grand Prix, circuit, pilot, record">
+        <meta name="msapplication-TileColor" content="#ff0000">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/resurse/css/eroare.css"
+        <%- include("../fragmente/head.ejs");  %> 
+
+    </head>
+    <body>
+        
+    <%- include("../fragmente/header.ejs");  %> 
+
+    <main>
+        <div id="err-coloane">
+			<div id="err-imag">
+				<img src="<%- locals.imagine %>" />
+			</div>
+			<section>
+				<h2><%- locals.titlu %></h2>
+				<p><%- locals.text %></p>
+			</section>
+		</div>
+    </main>
+    
+    <%- include("../fragmente/footer.ejs");  %> 
+
+
+    </body>
+</html>

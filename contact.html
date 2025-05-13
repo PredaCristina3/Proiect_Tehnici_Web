@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Monaco GP</title>
+    <link rel="shortcut icon" href="resurse/ico/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resurse/css/styles.css">
+    <link rel="stylesheet" href="resurse/css/nav.css">
+    <link rel="stylesheet" href="resurse/css/nav1000.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="resurse/css/nav700.css" media="screen and (max-width:700px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+
+</head>
+<body>
+    <header>
+        <nav>
+            <label id="hamburger" for="ch-menu">
+                <img src="resurse/img/Hamburger_icon_alb.png" alt="menu">
+            </label>
+            <input id="ch-menu" type="checkbox">
+            <ul class="meniu">
+                <li><div class="text-icon"><a href="index.html">Acasă</a></div>
+                    <div class="img-icon"><a href="index.html"><span class="fas fa-regular fa-house"></span></a></div>
+                </li>
+                <li><div>Monaco GP</div>
+                    <ul>
+                        <li><a href="index.html#informatii-generale">Informații</a></li>
+                        <li><a href="index.html#intrebari-frecvente">Întrebări</a></li>
+                        <li><a href="index.html#monaco-media">Media</a></li>
+                        <li><a href="index.html#pdf-section">Documente</a></li>
+                        <li><a href="index.html#curiozitati">Curiozități</a></li>
+                        <li><a href="index.html#locatie">Locație</a></li>
+                    </ul>
+                </li>
+                <li><div>Pagini</div>
+                    <ul>
+                        <li><a href="despre.html">Despre Circuit</a></li>
+                        <li><a href="curse.html">Curse & Statistici</a></li>
+                        <li><a href="harta.html">Harta Circuitului</a></li>
+                        <li><a href="galerie.html">Galerie Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Contact</h1>
+    </header>
+    <main>
+        <section class="contact-container">
+            <h2>Formular de contact</h2>
+            <form action="#" method="post">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+    
+        <section class="contact-container">
+            <h2>Locație</h2>
+            <iframe class="locatie" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.6892328180224!2d7.418720876016434!3d43.73503507109833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc30072073097%3A0xcbec9c059a0c3640!2sCircuit%20de%20Monaco%20Start%2FFinish%20Line!5e1!3m2!1sen!2sro!4v1742219532074!5m2!1sen!2sro" allowfullscreen loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" id="link-top">
+            <div id="triunghi">&#5123;</div>
+            <span class="tooltip">Top</span>
+        </a>
+        <p>Acesta este un proiect școlar!</p>
+        <address>
+            Telefon: <a href="tel:+40700000000">+40 700 000 000</a> |
+            <a href="https://maps.google.com?q=Facultatea+de+Matematic%C4%83+%C8%99i+Informatic%C4%83" target="_blank">📍 Locație pe Google Maps</a> |
+            Mail: <a href="mailto:contact@f1monaco.com">contact@f1monaco.com</a> | 
+            WhatsApp: <a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX">Pune-ne o întrebare</a>
+        </address>
+        <small>&copy; <time datetime="2025-03-18">18 martie 2025</time> F1 Monaco Grand Prix. Toate drepturile rezervate.</small>
+    </footer>
+</body>
+</html>

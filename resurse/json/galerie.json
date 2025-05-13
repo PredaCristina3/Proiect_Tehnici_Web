@@ -1,0 +1,65 @@
+{
+	"cale_galerie":"resurse/img/galerie",
+	"imagini": [
+		{
+			"fisier":"g1.jpg",
+			"titlu":"Monaco poza 1",
+			"descriere":"Max Verstappen în timpul cursei de la Monaco",
+			"sfert_ora":["1", "2"]
+		},
+		{
+			"fisier":"g2.jpg",
+			"titlu":"Monaco poza 2",
+			"descriere":"Monopostul Ferrari în timpul cursei de la Monaco",
+			"sfert_ora":["2", "3"]
+		},
+		{
+			"fisier":"g3.jpg",
+			"titlu":"Monaco poza 3",
+			"descriere":"Lewis Hamilton căștigă cursa de la Monaco în 2019",
+			"sfert_ora":["3", "4"]
+		},
+		{
+			"fisier":"g4.jpg",
+			"titlu":"Monaco poza 4",
+			"descriere":"Startul cursei de la Monaco din 2021",
+			"sfert_ora":["1", "4"]
+		},
+		{
+			"fisier":"g5.jpg",
+			"titlu":"Monaco poza 5",
+			"descriere":"Șicană parte a circuitul de la Monaco",
+			"sfert_ora":["1", "2"]
+		},
+		{
+			"fisier":"g6.jpg",
+			"titlu":"Monaco poza 6",
+			"descriere":"Portul de la Monaco",
+			"sfert_ora":["2", "3"]
+		},
+		{
+			"fisier":"g7.jpg",
+			"titlu":"Monaco poza 7",
+			"descriere":"Monopostul McLaren în timpul cursei de la Monaco din 2024",
+			"sfert_ora":["3", "4"]
+		},
+		{
+			"fisier":"g8.jpg",
+			"titlu":"Monaco poza 8",
+			"descriere":"Startul cursei de la Monaco din 2024",
+			"sfert_ora":["1", "4"]
+		},
+		{
+			"fisier":"g9.jpg",
+			"titlu":"Monaco poza 9",
+			"descriere":"Max Verstappen în timpul cursei de la Monaco din 2022",
+			"sfert_ora":["1", "2"]
+		},
+		{
+			"fisier":"g10.jpg",
+			"titlu":"Monaco poza 10",
+			"descriere":"Condițiile meteo din timpul cursei de la Monaco din 2022",
+			"sfert_ora":["2", "3", "4"]
+		}
+	]
+}

@@ -1,0 +1,44 @@
+#grid-galerie {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#grid-galerie.sfert-1 figure:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+#grid-galerie.sfert-1 figure:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+#grid-galerie.sfert-1 figure:nth-child(3) {
+  grid-area: 2/2/3/3;
+}
+
+#grid-galerie.sfert-2 figure:nth-child(1) {
+  grid-area: 4/2/5/3;
+}
+#grid-galerie.sfert-2 figure:nth-child(2) {
+  grid-area: 5/1/6/2;
+}
+#grid-galerie.sfert-2 figure:nth-child(3) {
+  grid-area: 5/2/6/3;
+}
+
+#grid-galerie.sfert-3 figure:nth-child(1) {
+  grid-area: 4/1/5/2;
+}
+#grid-galerie.sfert-3 figure:nth-child(2) {
+  grid-area: 5/1/6/2;
+}
+#grid-galerie.sfert-3 figure:nth-child(3) {
+  grid-area: 5/2/6/3;
+}
+
+#grid-galerie.sfert-4 figure:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+#grid-galerie.sfert-4 figure:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+#grid-galerie.sfert-4 figure:nth-child(3) {
+  grid-area: 2/1/3/2;
+}

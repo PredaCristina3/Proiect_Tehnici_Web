@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>F1 Monaco Grand Prix</title>
+    <meta name="description" content="Circuitul de Formula 1 de la Monaco - istoric, statistici și informații despre curse">
+    <meta name="keywords" content="F1, Formula 1, Monaco GP, Grand Prix, circuit, pilot, record">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/resurse/scss/galerie_statica.css">
+    <link rel="stylesheet" href="/resurse/scss/galerie_statica_1000.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="/resurse/scss/galerie_statica_700.css" media="screen and (max-width:700px)">
+    <!--<link rel="stylesheet" href="/resurse/scss/galerie_dinamica.css">-->
+    <link rel="stylesheet" href="/resurse/css/galerie-dinamica.css">
+
+
+    <%- include("../fragmente/head.ejs") %>
+</head>
+
+<body>
+    <header class="print-coperta">
+        <%- include("../fragmente/header.ejs") %>
+        <h1 class="h1container">F1 Monaco <i>Grand Prix</i></h1>
+    </header>
+    
+    <main>
+        <div class="text-container" id="grid-pagina">
+            <section id="informatii-generale">
+                <div class="image-container">
+                    <figure>
+                        <picture>
+                            <source srcset="/resurse/img/monaco_fairmont_mic.jpg" media="(max-width:700px)"/>
+                            <source srcset="/resurse/img/monaco_fairmont_medium.jpg" media="(max-width:1000px)"/>
+                            <img src="/resurse/img/monaco_fairmont.jpg" alt="Fairmont Hairpin" style="width:100%">
+                        </picture>
+                        <figcaption>O privire spectaculoasă asupra celei mai lente curbe din Formula 1 - Fairmont Hairpin.</figcaption>
+                    </figure>
+                </div>
+                <div class="coloane">
+                    <section id="istoric" class="coloana">
+                        <h2>🏎️ <strong>Scurt Istoric</strong></h2>
+                        <p>-> Marele Premiu de la Monaco este una dintre cele mai prestigioase și iconice curse din Formula 1, făcând parte din <i>Triple Crown</i> alături de <i>Indy 500</i> și <i>Le Mans</i>.</p>
+                        <p>-> 1929 - Prima cursă a fost organizată de Antony Noghès și câștigată de William Grover-Williams într-un Bugatti.</p>
+                        <p>-> 1950 - Devine parte a primului sezon oficial de Formula 1, câștigată de Juan Manuel Fangio.</p>
+                        <p>-> Anii '60-'70 - Graham Hill devine <i>Mr. Monaco</i> cu 5 victorii; Jackie Stewart și Niki Lauda domină perioada.</p>
+                        <p>-> Anii '80-'90 - Ayrton Senna câștigă de 6 ori, stabilind un record, iar duelul său cu Alain Prost devine legendar.</p>
+                        <p>-> Anii 2000 - Michael Schumacher și Fernando Alonso marchează era modernă.</p>
+                        <p>-> Anii 2010 - Red Bull, Mercedes și Ferrari își împart victoriile, cu piloți ca Hamilton, Vettel și Ricciardo.</p>
+                        <p>-> 2020 - Cursa este anulată din cauza pandemiei de <i>COVID-19</i>.</p>
+                        <p>-> 2021-2023 - Max Verstappen și Sergio Pérez se impun în era actuală a F1.</p>
+                        <p>-> 2024 - "Eroul" local, Charles Leclerc, câștigă pentru prima dată cursa de F1 de la Monaco.</p>
+                        <p>-> Monaco rămâne o cursă unică, faimoasă pentru dificultatea sa, lipsa posibilităților de depășire și atmosfera exclusivistă.</p>
+                        <a href="https://www.formula1.com/en/racing/2024/Monaco.html">Vezi ultimele rezultate pe Formula1.com</a>
+                    </section>
+
+                    <section id="intrebari-frecvente" class="coloana">
+                        <h2><strong>❓ Întrebări frecvente</strong></h2>
+                        <details>
+                            <summary>Când a fost prima cursă de Formula 1 la Monaco?</summary>
+                            <p>Prima cursă de Formula 1 la Monaco a avut loc în 1929.</p>
+                        </details>
+                        <details>
+                            <summary>Cine are cele mai multe victorii la Monaco?</summary>
+                            <p>Ayrton Senna deține recordul cu 6 victorii la Monaco Grand Prix.</p>
+                        </details>
+                        <details>
+                            <summary>Care este viteza maximă atinsă pe circuitul de la Monaco?</summary>
+                            <p>Viteza maximă înregistrată pe circuit este de aproximativ 290 km/h pe tunel.</p>
+                        </details>
+                        <details>
+                            <summary>De ce este considerat Monaco GP una dintre cele mai dificile curse?</summary>
+                            <p>Circuitul este strâmt, cu viraje strânse și aproape imposibil de depășit, cerând precizie maximă din partea piloților.</p>
+                        </details>
+                        <details>
+                            <summary>Cât durează, în medie, o cursă de F1 la Monaco?</summary>
+                            <p>Durata cursei este de aproximativ 1 oră și 40 de minute, având un număr total de 78 de tururi.</p>
+                        </details>
+                        <details>
+                            <summary>Care sunt echipele cu cele mai multe victorii la Monaco?</summary>
+                            <p>McLaren și Ferrari sunt cele mai de succes echipe, fiecare având peste 15 victorii.</p>
+                        </details>
+                    </section>
+                </div>
+                <div id="harta-circuit" class="circuit-map image-container">
+                    <h3 class="titlu-harta"><strong>🗺️ Harta Circuitului de la Monaco</strong></h3>
+                    <img src="/resurse/img/Monaco_Circuit_DRS.jpg" alt="Circuitul de la Monaco" class="monaco-map">
+                    <map name="monaco-map">
+                        <area shape="rect" coords="34,44,270,350" href="despre.html" alt="Detalii Circuit">
+                        <area shape="circle" coords="500,150,75" href="harta.html" alt="Harta Detaliată">
+                    </map>
+                </div>
+            </section>
+            
+            <section id="tabel">
+                <h2>Câștigători Renumiți</h2>
+                <div id="table-container">
+                    <table id="tab">
+                        <caption>Top 5 Căștigători ai Cursei de F1 de la Monaco</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Nr. Victorii</th>
+                                <th>Nume</th>
+                                <th>Țara de Origine</th>
+                                <th>Ani</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>6</td>
+                                <td>Ayrton Senna</td>
+                                <td>Brazilia</td>
+                                <td>1987, 1989, 1990, 1991, 1992, 1993</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">2.</td>
+                                <td rowspan="2">5</td>
+                                <td>Graham Hill</td>
+                                <td>UK</td>
+                                <td>1963, 1964, 1965, 1968, 1969</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Schumacher</td>
+                                <td>Germania</td>
+                                <td>1994, 1995, 1997, 1999, 2001</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>4</td>
+                                <td>Alain Prost</td>
+                                <td>Franța</td>
+                                <td>1984, 1985, 1986, 1988</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">4.</td>
+                                <td rowspan="4">3</td>
+                                <td>Stirling Moss</td>
+                                <td>UK</td>
+                                <td>1956, 1960, 1961</td>
+                            </tr>
+                            <tr>
+                                <td>Jackie Stewart</td>
+                                <td>UK</td>
+                                <td>1966, 1971, 1973</td>
+                            </tr>
+                            <tr>
+                                <td>Nico Rosberg</td>
+                                <td>Germania</td>
+                                <td>2013, 2014, 2015</td>
+                            </tr>
+                            <tr>
+                                <td>Lewis Hamilton</td>
+                                <td>UK</td>
+                                <td>2008, 2016, 2019</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="9">5.</td>
+                                <td rowspan="9">2</td>
+                                <td>Juan Manuel Fangio</td>
+                                <td>Argentina</td>
+                                <td>1950, 1957</td>
+                            </tr>
+                            <tr>
+                                <td>Maurice Trintignant</td>
+                                <td>Franța</td>
+                                <td>1955, 1958</td>
+                            </tr>
+                            <tr>
+                                <td>Niki Lauda</td>
+                                <td>Austria</td>
+                                <td>1975, 1976</td>
+                            </tr>
+                            <tr>
+                                <td>Jody Scheckter</td>
+                                <td>Africa de Sud</td>
+                                <td>1977, 1979</td>
+                            </tr>
+                            <tr>
+                                <td>David Coulthard</td>
+                                <td>UK</td>
+                                <td>2000, 2002</td>
+                            </tr>
+                            <tr>
+                                <td>Fernando Alonso</td>
+                                <td>Spania</td>
+                                <td>2006, 2007</td>
+                            </tr>
+                            <tr>
+                                <td>Mark Webber</td>
+                                <td>Australia</td>
+                                <td>2010, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>Sebastian Vettel</td>
+                                <td>Germania</td>
+                                <td>2011, 2017</td>
+                            </tr>
+                            <tr>
+                                <td>Max Verstappen</td>
+                                <td>Olanda</td>
+                                <td>2021, 2023</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tfoot>
+                    </table> 
+                </div>
+            </section>
+
+            <section id="calendar">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, saepe ipsam minus delectus ut iste. Consectetur debitis rerum dolor.</p>
+            </section>
+
+            <section id="anunturi">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, saepe ipsam minus delectus ut iste. Consectetur debitis rerum dolor.</p>
+            </section>
+
+            <section id="useri-online">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, saepe ipsam minus delectus ut iste. Consectetur debitis rerum dolor.</p>
+            </section>
+
+            <section id="useri-statistici">
+                <p><b>IP: </b><%- locals.ip %></p>
+            </section>
+
+            <section id="date-site-server">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, saepe ipsam minus delectus ut iste. Consectetur debitis rerum dolor.</p>
+            </section>
+
+            <section id="diverse">
+                <h2 class="titlu-iframe"><span class= "fa-brands fa-youtube" style="color: #ff0000;"></span> Monaco Media <span class="fa-solid fa-flag-checkered fa-shake"></span></h2>
+                <div class="container-iframe" id="monaco-media">
+                    <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/469i9RZaWuc?si=lLpVpQfNJtHa0dbN" target="ifr-video">Transformarea oraș-circuit</a>
+                        <a href="https://www.youtube.com/embed/oTJaih4W19U?si=c4gZfkybc0a6he6l" target="ifr-video">Monaco în orice altă zi</a>
+                        <a href="https://www.youtube.com/embed/9T6Jfw0YY-g?si=U09cW3-ArV8oSkpb" target="ifr-video">Monaco în timpul cursei</a><br/>
+                    </div>
+                    <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/469i9RZaWuc?si=lLpVpQfNJtHa0dbN" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+                    id="video-iframe">
+                    </iframe>
+                </div><br/>
+                <section class="text-formatting-section" id="curiozitati">
+                    <h2>Curiozități</h2>
+                    <p>Legendarul <b>Ayrton Senna</b> deține recordul pentru cele mai multe victorii la <i>Monaco Grand Prix</i>, câștigând de <strong>cinci ori</strong> consecutiv între 1989 și 1993.</p>
+                    <p>Exemplu de abreviere: <abbr title="Marele Premiu al Principatului Monaco">MPPM</abbr> este o prescurtare neoficială a cursei.</p>
+                    <p>Definirea unui termen: <dfn>Strâmtoarea Loews</dfn> este cel mai lent viraj din <cite>Formula 1</cite>, situat pe circuitul de la Monaco.</p>
+                    <p>În trecut, linia de start era situată mai aproape de <s>Virajul Saint Devote</s> <ins>zona de la Casino Square</ins>, pentru a facilita starturile în siguranță.</p>
+                    <p>Citat scurt: <q>We have 21 races in the year and Monaco is the one that you want to win.</q> - Sir Lewis Hamilton</p>
+                </section><br/>
+                <div class="formula-container">
+                    <h2>🧮 Știați că formula vitezei medii este aceasta?</h2>
+                    <p>Pentru a calcula viteza medie în Formula 1, folosiți formula:</p>
+                    <div class="formula-box">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mrow>
+                                <mi>v</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mi>d</mi>
+                                    <mi>t</mi>
+                                </mfrac>
+                            </mrow>
+                        </math>
+                    </div>
+                </div>
+            </section>
+        </div><br/>
+
+        <h2>Charles Leclerc Pole Position la Monaco GP 2024</h2>
+        <video controls preload="metadata" poster="/resurse/img/leclerc_pole_2024.jpg">
+            <source src="/resurse/video/Charles Leclerc 2024 Monaco GP Pole.mp4" type="video/mp4">
+            <source src="/resurse/video/Charles Leclerc 2024 Monaco GP Pole.ogv" type="video/ogv"> 
+            <source src="/resurse/video/Charles Leclerc 2024 Monaco GP Pole.webm" type="video/webm">  
+            <track default src="resurse/video/tracks/captions_pt_video_ro.vtt" kind="captions" srclang="ro" label="română"/>
+            <track src="resurse/video/tracks/captions_pt_video_en.vtt" kind="captions" srclang="en" label="engleză"/>
+        </video>
+
+        <div class="duotone-container"></div><br>
+        
+        <hr id="hr"><br>
+
+        <section id="galerie-statica">
+            <h2>Galerie</h2>
+            <% d = new Date(); 
+            // d = new Date("2025-04-26T12:50:00"); // pt testare
+            sfert_curent = Math.floor(d.getMinutes()/15) + 1;
+            let sfert_curent_str = sfert_curent.toString();
+            let contor = 0; %>
+            <div id="grid-galerie">
+            <%  for (let imag of locals.imagini) { 
+                    if (imag.sfert_ora && imag.sfert_ora.includes(sfert_curent_str)) {
+                        if (contor >= 10) break;
+                        contor++; %>
+                <figure>
+                    <picture>
+                        <source srcset="<%- imag.fisier_mediu %>" media="screen and (max-width:1000px)"/>
+                        <source srcset="<%- imag.fisier_mic %>" media="screen and (max-width:700px)"/>
+                        <img src="<%- imag.fisier %>" title="<%- imag.descriere %>" alt="<%- imag.titlu %>">
+                    </picture>
+                    <figcaption><%- imag.descriere %></figcaption>
+                </figure>
+                    <% }
+                } %>
+            </div>
+        </section><br>
+
+        <section id="galerie-dinamica">
+            <% // Alegem o putere a lui 2: 2, 4, 8, 16
+            const puteri = [2, 4, 8, 16];
+            const randomCount = puteri[Math.floor(Math.random() * puteri.length)];
+            // Filtrăm imaginile cu indici pari
+            const imagPare = locals.imagini.filter(function(img, index) {
+                return index % 2 === 0;
+            });
+            // Selectăm primele 'randomCount' imagini
+            const imagSelect = imagPare.slice(0, randomCount); %>
+            <div id="galerie-frame">
+                <% imagSelect.forEach(function(imag, index) { %>
+                    <figure class="slide">
+                        <picture>
+                            <source srcset="<%- imag.fisier_mediu %>" media="screen and (max-width:1000px)">
+                            <source srcset="<%- imag.fisier_mic %>" media="screen and (max-width:700px)">
+                            <img src="<%- imag.fisier %>" title="<%- imag.descriere %>" alt="<%- imag.titlu %>">
+                        </picture>
+                        <figcaption><%- imag.descriere %></figcaption>
+                    </figure>
+                <% }); %>
+            </div>
+        </section><br>
+
+        <section id="pdf-section">
+            <h2>📄 Documente Oficiale</h2>
+            <p>Descarcă ghidul și regulamentul oficial al Grand Prix-ului de la Monaco:</p>
+            <div class="coloane">
+                <div class="coloana">
+                    <h3>📘 Ghid Oficial</h3>
+                    <a href="/resurse/pdf/Ghid_Oficial-Monaco-Grand-Prix-2025.pdf" target="_blank" download>
+                    Descarcă PDF
+                    </a>
+                    <embed src="/resurse/pdf/Ghid_Oficial-Monaco-Grand-Prix-2025.pdf" type="application/pdf" style="width: 100%" height="500">
+                </div>
+                <div class="coloana">
+                    <h3>📜 Regulament Oficial</h3>
+                    <a href="/resurse/pdf/Regulament_Oficial-Monaco-Grand-Prix-2025.pdf" target="_blank" download>
+                    Descarcă PDF
+                    </a>
+                    <embed src="/resurse/pdf/Regulament_Oficial-Monaco-Grand-Prix-2025.pdf" type="application/pdf" style="width: 100%" height="500">
+                </div>
+            </div>
+        </section><br>
+        
+        <section class="map-section" id="locatie">
+            <h2>📍 Locația</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.2480018523183!2d26.097011776007523!3d44.43553547107578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e1!3m2!1sro!2sro!4v1742233476057!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <div id="reflex-container">
+            <h2 id="text-ref">
+                The crown jewel of F1
+                <div id="text-reflectat">
+                    The crown jewel of F1
+                </div>
+            </h2>
+        </div>
+
+        <div class="watermark">Preda Cristina-Paula</div>
+        
+    </main>
+
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+</html>
+
+
+
+
+
+
